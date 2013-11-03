@@ -1,0 +1,20 @@
+{
+  "name": "maze-generator",
+  "version": "0.1.0",
+  "description": "Maze generator",
+  "homepage": "https://github.com/romainberger/maze-generator",
+  "author":{
+    "name": "Romain Berger",
+    "email": "romain@romainberger.com",
+    "url": "http://romainberger.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:romainberger/maze-generator.git"
+  },
+  "bugs": {
+    "url" : "https://github.com/romainberger/maze-generator/issues",
+    "email" : "romain@romainberger.com"
+  },
+  "license": "MIT"
+}
