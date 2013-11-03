@@ -3,14 +3,14 @@ module.exports = function(size, algorithm) {
 
   var width  = size[0]
     , height = size[1]
-    , algorithm = algorithm || 'recursiveBacktracking'
     , generator = {}
+  algorithm = algorithm || 'recursiveBacktracking'
 
   // Helper
   function shuffle(o){
-      for (var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
-      return o;
-  };
+      for (var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x)
+      return o
+  }
 
   // Algorithm
 
