@@ -16,5 +16,8 @@
     "url" : "https://github.com/romainberger/maze-generator/issues",
     "email" : "romain@romainberger.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "mocha": "~1.12.0"
+  }
 }
