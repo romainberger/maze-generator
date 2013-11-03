@@ -1,4 +1,4 @@
-# Maze Generator
+# Maze Generator [![Build Status](https://travis-ci.org/romainberger/maze-generator.png?branch=master)](https://travis-ci.org/romainberger/maze-generator)
 
 Generate random maze
 
