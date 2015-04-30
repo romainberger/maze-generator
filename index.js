@@ -44,16 +44,18 @@ module.exports = function(size, algorithm) {
     function carve_passages_from(cx, cy, grid) {
       var directions = shuffle(dirs)
 
-      directions.forEach(function(direction) {
-        var nx = cx + DX[direction]
-          , ny = cy + DY[direction]
+      setImmediate(function() {
+        directions.forEach(function(direction) {
+          var nx = cx + DX[direction]
+            , ny = cy + DY[direction]
 
-        if (ny >= 0 && ny <= (grid.length - 1) && nx >= 0
-          && nx <= (grid.length - 1) && grid[ny][nx] === 0) {
-          grid[cy][cx] += dirsValue[direction]
-          grid[ny][nx] += OPPOSITE[direction]
-          carve_passages_from(nx, ny, grid)
-        }
+          if (ny >= 0 && ny <= (grid.length - 1) && nx >= 0
+            && nx <= (grid.length - 1) && grid[ny][nx] === 0) {
+            grid[cy][cx] += dirsValue[direction]
+            grid[ny][nx] += OPPOSITE[direction]
+            carve_passages_from(nx, ny, grid)
+          }
+        })
       })
     }
 

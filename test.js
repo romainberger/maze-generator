@@ -11,4 +11,10 @@ describe('maze-generator', function() {
     assert.equal(maze[0].length, 20)
   })
 
+  it('should\'n provoke a range error', function() {
+    var maze = generator([1000, 1000])
+    assert.equal(maze.length, 1000)
+    assert.equal(maze[0].length, 1000)
+  })
+
 })
